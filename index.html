@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Julia Estética e Cosmética</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+      .hover-scale {
+        transition: transform 0.3s ease;
+      }
+      .hover-scale:hover {
+        transform: scale(1.05);
+      }
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 1.75rem;
+        }
+        h2 {
+          font-size: 1.25rem;
+        }
+        .text-lg {
+          font-size: 1rem;
+        }
+        .grid-cols-3 {
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+      }
+    </style>https://www.onlinegdb.com/#tab-stdin
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Top Banner -->
+    <div class="bg-pink-100 text-center py-2 text-sm font-medium">
+      Frete grátis para todo o Brasil nas compras acima de R$199!
+    </div>
+
+    <!-- Header com logo e nome -->
+    <header
+      class="flex items-center justify-between p-4 max-w-6xl mx-auto"
+    >
+      <div class="flex items-center gap-4">
+        <img
+          src="https://via.placeholder.com/50x50?text=Logo"
+          alt="Logo Julia Estética"
+          class="w-12 h-12 rounded-full"
+        />
+        <span class="text-xl font-bold text-pink-600"
+          >Julia Estética e Cosmética</span
+        >
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-pink-50 p-6 text-center">
+      <h1 class="text-4xl font-bold mb-2">
+        Cuide do seu corpo com os melhores tratamentos
+      </h1>
+      <p class="text-lg mb-4">Estética avançada com resultados comprovados</p>
+      <a
+        href="solucoes-corporais.html"
+        class="bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded text-lg"
+        >Conheça Nossas Soluções</a
+      >
+    </section>
+
+    <!-- Soluções em Destaque -->
+    <section id="solucoes" class="p-6 max-w-6xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-4">Soluções em Estética</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div
+          class="rounded-2xl shadow-md overflow-hidden hover-scale cursor-pointer"
+          onclick="location.href='solucoes-corporais.html'"
+          role="button"
+          tabindex="0"
+          onkeypress="if(event.key==='Enter')location.href='solucoes-corporais.html'"
+        >
+          <img
+            src="https://via.placeholder.com/300x300?text=Corporal"
+            alt="Soluções Corporais"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Soluções Corporais</h3>
+            <p class="text-pink-600 font-bold mb-2">
+              Redução de medidas, celulite e firmeza
+            </p>
+            <a
+              href="solucoes-corporais.html"
+              class="w-full flex items-center justify-center gap-2 bg-pink-500 hover:bg-pink-600 text-white py-2 rounded"
+              ><i class="ph ph-magic-wand"></i> Ver Mais</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="rounded-2xl shadow-md overflow-hidden hover-scale cursor-pointer"
+          onclick="location.href='tecnologias-esteticas.html'"
+          role="button"
+          tabindex="0"
+          onkeypress="if(event.key==='Enter')location.href='tecnologias-esteticas.html'"
+        >
+          <img
+            src="https://via.placeholder.com/300x300?text=Tecnologias"
+            alt="Tecnologias Estéticas"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Tecnologias Estéticas</h3>
+            <p class="text-pink-600 font-bold mb-2">
+              Equipamentos modernos e não invasivos
+            </p>
+            <a
+              href="tecnologias-esteticas.html"
+              class="w-full flex items-center justify-center gap-2 bg-pink-500 hover:bg-pink-600 text-white py-2 rounded"
+              ><i class="ph ph-cpu"></i> Ver Mais</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="rounded-2xl shadow-md overflow-hidden hover-scale cursor-pointer"
+          onclick="location.href='faciais-a.html'"
+          role="button"
+          tabindex="0"
+          onkeypress="if(event.key==='Enter')location.href='faciais-a.html'"
+        >
+          <img
+            src="https://via.placeholder.com/300x300?text=Facial"
+            alt="Faciais/A"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Faciais/A</h3>
+            <p class="text-pink-600 font-bold mb-2">
+              Tratamentos para rejuvenescimento e limpeza
+            </p>
+            <a
+              href="faciais-a.html"
+              class="w-full flex items-center justify-center gap-2 bg-pink-500 hover:bg-pink-600 text-white py-2 rounded"
+              ><i class="ph ph-face-mask"></i> Ver Mais</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chamada para ação -->
+    <section class="bg-pink-100 py-8 text-center">
+      <h2 class="text-2xl font-bold mb-2">
+        Transforme sua beleza com nossas soluções personalizadas
+      </h2>
+      <a
+        href="solucoes-corporais.html"
+        class="bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded text-lg"
+        >Ver todas as soluções</a
+      >
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-100 py-4 text-center text-sm text-gray-600">
+      © 2025 Julia Estética e Cosmética. Todos os direitos reservados.
+    </footer>
+  </body>
+</html>
